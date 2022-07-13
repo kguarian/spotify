@@ -1,0 +1,386 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-redhat-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sun Jul  3 22:32:51 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# environment
+GTK_RC_FILES = /etc/gtk/gtkrc:/home/guarian/.gtkrc:/home/guarian/.config/gtkrc
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-096fabfa-aa50-4b31-8d1a-9ec18f4bceed.sock
+# environment
+KONSOLE_DBUS_SERVICE = :1.127
+# environment
+VSCODE_CWD = /home/guarian/HOME/coding/go/src/native/spotify_main/spotify
+# environment
+WINDOWID = 56623111
+# environment
+WINDOWPATH = 2
+# environment
+GDM_LANG = en_US.UTF-8
+# default
+MAKE_COMMAND := make
+# environment
+VSCODE_GIT_ASKPASS_EXTRA_ARGS = --ms-enable-electron-run-as-node
+# environment
+GOPATH = /home/guarian/HOME/coding/go/
+# environment
+define BASH_FUNC_which%%
+() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}
+endef
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+SPOTIFY_SECRET = 35d4a7e6e8f34174b6ac39cd8327bfd9
+# environment
+KONSOLE_VERSION = 220401
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/guarian/HOME/coding/go/src/native/spotify_main/mytrace
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+HOSTNAME = ut1001
+# environment
+MAIL = /var/spool/mail/guarian
+# environment
+XDG_DATA_DIRS = /home/guarian/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+OLDPWD = /home/guarian/HOME/coding/go/src/native/spotify_main
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/guarian/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+# environment
+SSH_ASKPASS = /usr/bin/ksshaskpass
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+COLORFGBG = 15;0
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/guarian/HOME/coding/go/src/native/spotify_main/mytrace
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+LESSOPEN = ||/usr/bin/lesspipe.sh %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXXJfQxPD/agent.224541
+# default
+.SHELLFLAGS := -c
+# environment
+HISTSIZE = 1000
+# environment
+XDG_CONFIG_DIRS = /home/guarian/.config/kdedefaults:/etc/xdg:/usr/share/kde-settings/kde-profile/default/xdg
+# environment
+SPOTIFY_ID = 4b633e38f213419eb598ab56ab606117
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GIT_ASKPASS = /usr/share/code/resources/app/extensions/git/dist/askpass.sh
+# environment
+XCURSOR_THEME = Sweet-cursors
+# environment
+XDG_SESSION_DESKTOP = plasmax11
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 237758
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+GDK_CORE_DEVICE_EVENTS = 1
+# environment
+SESSION_MANAGER = local/unix:@/tmp/.ICE-unix/224813,unix/unix:/tmp/.ICE-unix/224813
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-redhat-linux-gnu
+# environment
+IMSETTINGS_INTEGRATE_DESKTOP = yes
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=none
+# environment
+DOTNET_BUNDLE_EXTRACT_BASE_DIR = /home/guarian/.cache/dotnet_bundle_extract
+# environment
+SHLVL = 4
+# environment
+PROFILEHOME = 
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+IMSETTINGS_MODULE = none
+# environment
+PATH = /home/guarian/.local/bin:/home/guarian/bin:/usr/lib64/ccache:/home/guarian/.cargo/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/var/lib/snapd/snap/bin:/home/guarian/.composer/vendor/bin:/home/guarian/.dotnet/tools:/home/guarian/.exec:/usr/local/go/bin:/home/guarian/HOME/coding/go/bin:/home/guarian/HOME/coding/installation/depot_tools:/usr/local/pycharm-2020.3.3/bin/:/usr/local/GoLand-2020.3.3/bin/:/usr/lib/clion-2020.3.3/bin/:/usr/local/Write:/home/guarian/HOME/coding/projects/steply/pyodide_source/emsdk/emsdk:/home/guarian/HOME/coding/projects/steply/pyodide_source/emsdk/emsdk/node/14.15.5_64bit/bin:/home/guarian/HOME/coding/projects/steply/pyodide_source/emsdk/emsdk/upstream/emscripten:/usr/local/AssemblyScript/bin:/usr/local/dotnet/:/home/guarian/.exec:/usr/local/go/bin:/home/guarian/HOME/coding/go/bin:/home/guarian/HOME/coding/installation/depot_tools:/usr/local/pycharm-2020.3.3/bin/:/usr/local/GoLand-2020.3.3/bin/:/usr/lib/clion-2020.3.3/bin/:/usr/local/Write:/home/guarian/HOME/coding/projects/steply/pyodide_source/emsdk/emsdk:/home/guarian/HOME/coding/projects/steply/pyodide_source/emsdk/emsdk/node/14.15.5_64bit/bin:/home/guarian/HOME/coding/projects/steply/pyodide_source/emsdk/emsdk/upstream/emscripten:/usr/local/AssemblyScript/bin:/usr/local/dotnet/:/home/guarian/.exec:/usr/local/go/bin:/home/guarian/HOME/coding/go/bin:/home/guarian/HOME/coding/installation/depot_tools:/usr/local/pycharm-2020.3.3/bin/:/usr/local/GoLand-2020.3.3/bin/:/usr/lib/clion-2020.3.3/bin/:/usr/local/Write:/home/guarian/HOME/coding/projects/steply/pyodide_source/emsdk/emsdk:/home/guarian/HOME/coding/projects/steply/pyodide_source/emsdk/emsdk/node/14.15.5_64bit/bin:/home/guarian/HOME/coding/projects/steply/pyodide_source/emsdk/emsdk/upstream/emscripten:/usr/local/AssemblyScript/bin:/usr/local/dotnet/
+# environment
+MOZ_GMP_PATH = /usr/lib64/mozilla/plugins/gmp-gmpopenh264/system-installed
+# default
+MAKEFILES := 
+# environment
+VSCODE_GIT_IPC_HANDLE = /run/user/1000/vscode-git-14756f958b.sock
+# environment
+LANGUAGE = 
+# environment
+VSCODE_GIT_ASKPASS_NODE = /usr/share/code/code
+# automatic
+^F = $(notdir $^)
+# environment
+VSCODE_GIT_ASKPASS_MAIN = /usr/share/code/resources/app/extensions/git/dist/askpass-main.js
+# environment
+INVOCATION_ID = 7d57cfe786724488b17beab954b26a21
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = guarian
+# environment
+TERM_PROGRAM = vscode
+# automatic
+?F = $(notdir $?)
+# environment
+KDE_APPLICATIONS_AS_SCOPE = 1
+# environment
+XDG_SEAT = seat0
+# environment
+GTK_IM_MODULE = gtk-im-context-simple
+# environment
+XDG_CURRENT_DESKTOP = KDE
+# environment
+KDEDIRS = /usr
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = plasmax11
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = KDE
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = guarian
+# environment
+XDG_VTNR = 2
+# makefile
+.DEFAULT_GOAL := all
+# environment
+SYSTEMD_EXEC_PID = 226143
+# environment
+HISTCONTROL = ignoredups
+# environment
+EDITOR = /usr/bin/vim
+# environment
+DISPLAY = :0
+# environment
+USER = guarian
+# default
+MAKE_VERSION := 4.3
+# environment
+KDE_SESSION_UID = 1000
+# environment
+KONSOLE_DBUS_SESSION = /Sessions/4
+# environment
+MANAGERPID = 224353
+# environment
+which_declare = declare -f
+# environment
+DEBUGINFOD_URLS = https://debuginfod.fedoraproject.org/ 
+# environment
+SSH_AGENT_PID = 224716
+# environment
+_ = /usr/bin/make
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+COLORTERM = truecolor
+# environment
+GOMODCACHE = /home/guarian/HOME/coding/go/pkg/mod
+# environment
+JOURNAL_STREAM = 8:722355
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+GTK2_RC_FILES = /etc/gtk-2.0/gtkrc:/home/guarian/.gtkrc-2.0:/home/guarian/.gtkrc-2.0-kde4:/home/guarian/.config/gtkrc-2.0
+# environment
+HOME = /home/guarian
+# environment
+QT_IM_MODULE = xim
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-4ddfb22c-1.68.1-main.sock
+# environment
+TERM = xterm-256color
+# environment
+XDG_SESSION_ID = 5
+# environment
+XCURSOR_SIZE = 24
+# environment
+GOPROXY = https://proxy.golang.org,direct
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+QT_AUTO_SCREEN_SCALE_FACTOR = 0
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SHELL_SESSION_ID = 7c5ba76f303c46438d2e112f4827fc91
+# environment
+KDE_SESSION_VERSION = 5
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# environment
+KDE_FULL_SESSION = true
+# environment
+XDG_MENU_PREFIX = kf5-
+# environment
+ 
+TERM_PROGRAM_VERSION = 1.68.1
+# environment
+DOTNET_ROOT = /usr/local/dotnet/
+# environment
+GDMSESSION = plasmax11
+# variable set hash-table stats:
+# Load=143/1024=14%, Rehash=0, Collisions=13/176=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 41, inode 38605005): 6 files, no impossibilities.
+
+# 6 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-09 17:39:57.619384
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all:
+#  Command line target.
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 3):
+	go build
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=4/1024=0%, Rehash=0, Collisions=0/16=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 11 / storage = 104 B / avg = 9 B
+# current buf: size = 8162 B / used = 104 B / count = 11 / avg = 9 B
+
+# strcache performance: lookups = 18 / hit rate = 38%
+# hash-table stats:
+# Load=11/8192=0%, Rehash=0, Collisions=0/18=0%
+# Finished Make data base on Sun Jul  3 22:32:52 2022
+
+ 

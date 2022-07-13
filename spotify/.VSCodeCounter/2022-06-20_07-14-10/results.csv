@@ -1,0 +1,26 @@
+"filename", "language", "Go", "Go Module File", "Makefile", "Go Checksum File", "Shell Script", "HTML", "Markdown", "JSON", "SQL", "comment", "blank", "total"
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/.VSCodeCounter/2022-06-20_07-13-47/details.md", "Markdown", 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 6, 21
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/.VSCodeCounter/2022-06-20_07-13-47/diff-details.md", "Markdown", 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 6, 15
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/.VSCodeCounter/2022-06-20_07-13-47/diff.md", "Markdown", 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 7, 19
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/.VSCodeCounter/2022-06-20_07-13-47/results.json", "JSON", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/.VSCodeCounter/2022-06-20_07-13-47/results.md", "Markdown", 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 7, 22
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/Makefile", "Makefile", 0, 0, 6, 0, 0, 0, 0, 0, 0, 30, 6, 42
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/api_gin_gonic.go", "Go", 64, 0, 0, 0, 0, 0, 0, 0, 0, 10, 17, 91
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/console_io_utils.go", "Go", 97, 0, 0, 0, 0, 0, 0, 0, 0, 12, 15, 124
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/const_api.go", "Go", 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/const_error_messages.go", "Go", 64, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 68
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/const_net.go", "Go", 34, 0, 0, 0, 0, 0, 0, 0, 0, 5, 8, 47
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/const_paths.go", "Go", 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 7
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/go.mod", "Go Module File", 0, 35, 0, 0, 0, 0, 0, 0, 0, 1, 10, 46
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/go.sum", "Go Checksum File", 0, 0, 0, 435, 0, 0, 0, 0, 0, 0, 1, 436
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/handler_structs.go", "Go", 52, 0, 0, 0, 0, 0, 0, 0, 0, 1, 9, 62
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/handlers.go", "Go", 284, 0, 0, 0, 0, 0, 0, 0, 0, 14, 33, 331
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/main.go", "Go", 985, 0, 0, 0, 0, 0, 0, 0, 0, 1048, 279, 2312
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/music_analytics.go", "Go", 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 57
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/mysql_backup_220607.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 0, 59, 12, 8, 79
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/page.html", "HTML", 0, 0, 0, 0, 0, 12446, 0, 0, 0, 11, 10199, 22656
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/player.go", "Go", 37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 42
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/refactorjs.sh", "Shell Script", 0, 0, 0, 0, 5, 0, 0, 0, 0, 1, 2, 8
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/spotify.go", "Go", 255, 0, 0, 0, 0, 0, 0, 0, 0, 16, 37, 308
+"/home/guarian/HOME/coding/go/src/native/outer_apis/spotify_main/spotify/ws.go", "Go", 5, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4, 10
+"Total", "-", 1935, 35, 6, 435, 5, 12446, 51, 1, 59, 1163, 10674, 26810

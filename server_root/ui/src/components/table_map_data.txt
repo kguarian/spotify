@@ -1,0 +1,17 @@
+
+{this.state.data.map(search_result =>
+    <TableRow key={search_result.id}>
+        <TableCell>{search_result.title}</TableCell>
+        <TableCell>{search_result.artists}</TableCell>
+        <TableCell>{search_result.duration}</TableCell>
+        <TableCell>{search_result.tempo}</TableCell>
+        <TableCell>{search_result.time_signature}</TableCell>
+        <TableCell>{search_result.popularity}</TableCell>
+        <TableCell>
+            <button type="button" className="btn btn-primary" onClick={(event) => {
+                console.log(event);
+                console.log(search_result.id);
+                this.playTrack(search_result.id);
+            }}>Play</button> </TableCell>
+    </TableRow>
+)}

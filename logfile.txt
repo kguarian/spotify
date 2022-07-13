@@ -1,0 +1,20 @@
+2022/01/03 07:01:37 LOG MESSAGE:
+2022/01/03 07:01:37 [34m
+2022/01/03 07:01:37 	/home/guarian/HOME/coding/go/src/native/noti_handler/spotify/dbus.go 58	: Connected to session bus
+2022/01/03 07:01:37 [0m
+2022/01/03 07:01:37 LOG MESSAGE:
+2022/01/03 07:01:37 [34m
+2022/01/03 07:01:37 	/home/guarian/HOME/coding/go/src/native/noti_handler/spotify/dbus.go 146	: signal from org.freedesktop.DBus to :1.3274 serial 4294967295 path /org/freedesktop/DBus interface org.freedesktop.DBus member NameLost
+  ":1.3274"
+2022/01/03 07:01:37 [0m
+2022/01/03 07:01:48 LOG MESSAGE:
+2022/01/03 07:01:48 [34m
+2022/01/03 07:01:48 	/home/guarian/HOME/coding/go/src/native/noti_handler/spotify/spotify.go 99	: 
+2022/01/03 07:01:48 [0m
+2022/01/03 07:01:49 oauth2: cannot fetch token: 400 Bad Request
+Response: {"error":"invalid_client"}:
+2022/01/03 07:01:49 [33m
+2022/01/03 07:01:49 	/home/guarian/HOME/coding/go/src/native/noti_handler/spotify/spotify.go 105	 failed: oauth2: cannot fetch token: 400 Bad Request
+Response: {"error":"invalid_client"}
+2022/01/03 07:01:49 [0m
+signal: interrupt

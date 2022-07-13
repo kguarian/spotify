@@ -1,0 +1,38 @@
+
+> ui_react@0.1.0 build
+> react-scripts build
+
+Creating an optimized production build...
+Compiled with warnings.
+
+[eslint] 
+src/App.js
+  Line 1:8:  'logo' is defined but never used              no-unused-vars
+  Line 4:9:  'MediaControlCard' is defined but never used  no-unused-vars
+  Line 5:9:  'SearchTable' is defined but never used       no-unused-vars
+
+src/components/MediaCard.js
+  Line 4:21:  'UrlSearch' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  86.99 kB  build/static/js/main.70631c6a.js
+  1.78 kB   build/static/js/787.6fd5d014.chunk.js
+  562 B     build/static/css/main.b56974ad.css
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+

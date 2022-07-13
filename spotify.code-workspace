@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"name": "spotify",
+			"path": "spotify"
+		},
+		{
+			"name": "spotify_main",
+			"path": "."
+		}
+	],
+    "settings": {}
+}

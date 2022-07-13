@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/guarian/HOME/coding/go/src/native/spotify_main/mytrace'
+go build
+make: Leaving directory '/home/guarian/HOME/coding/go/src/native/spotify_main/mytrace'
+ 

@@ -1,0 +1,150 @@
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+
+	//"log"
+	"net/http"
+	"time"
+
+	"github.com/zmb3/spotify/v2"
+)
+
+var (
+	song_timeout int
+)
+
+func RunUI() {
+	s_8081 := &http.Server{
+		Addr:           ":8081",
+		Handler:        http.HandlerFunc(UI_HandleRequest),
+		ReadTimeout:    1000 * time.Second, // zzz these timeout values probably should be more like 10, not 1000
+		WriteTimeout:   1000 * time.Second, // zzz these timeout values probably should be more like 10, not 1000
+		MaxHeaderBytes: 1 << 20,
+	}
+
+	s_8082 := &http.Server{
+		Addr:           ":8082",
+		Handler:        http.FileServer(http.Dir("./8082_dir")),
+		ReadTimeout:    1000 * time.Second, // zzz these timeout values probably should be more like 10, not 1000
+		WriteTimeout:   1000 * time.Second, // zzz these timeout values probably should be more like 10, not 1000
+		MaxHeaderBytes: 1 << 20,
+	}
+
+	Info_Log("Starting Listen on port 8081")
+	go func() { err := s_8081.ListenAndServe(); Errhandle_Log(err, err.Error()) }()
+	go func() { err := s_8082.ListenAndServe(); Errhandle_Log(err, err.Error()) }()
+
+	// pattern: log.Fatal(s_8081.ListenAndServe()) -- doesn't work right because log.Fatal obtains a lock
+	// see line 176 of https://cs.opensource.google/go/go/+/refs/tags/go1.18:src/log/log.go
+	LogExit()
+}
+
+func UI_HandleRequest(w http.ResponseWriter, r *http.Request) {
+	{
+		LogEnter()
+		defer LogExit()
+	}
+	var err error
+	var msg []byte
+	var req map[string]interface{} = make(map[string]interface{})
+
+	var n int
+
+	defer r.Body.Close()
+
+	Info_Log(fmt.Sprintf("UI_HandleRequest(URL=\"%s\")", r.URL))
+	mytrace.Info_Log("UI_Handle_Request:  Request type %T, value: %v\n", r, r) // zzz added by JSK for debug
+
+	msg = make([]byte, BUFSIZ)
+	n, err = r.Body.Read(msg)
+	if err != nil {
+		Errhandle_Log(err, err.Error())
+		// zzz apparently EOF as an error occurs and isn't fatal...
+	}
+	Info_Log(fmt.Sprintf("Post Body: '%s'", msg[:n]))
+
+	err = json.Unmarshal(msg[:n], &req)
+	if err != nil {
+		Errhandle_Log(err, err.Error())
+		goto GRACEFULLY_HANDLE
+	}
+
+	switch req["type"] {
+	case "play":
+		Info_Log("case play calling GetTrack()")
+		track, err := GetTrack(client_spotify, req["data"].(string))
+		if err != nil {
+			Errhandle_Log(err, err.Error())
+			goto GRACEFULLY_HANDLE
+		}
+		if track != nil {
+			err = client_spotify.PlayOpt(ctx, &spotify.PlayOptions{
+				URIs: []spotify.URI{track.URI},
+			})
+			if err != nil {
+				Errhandle_Log(err, err.Error())
+				goto GRACEFULLY_HANDLE
+			}
+		}
+		msg = []byte(fmt.Sprintf("Playing %s - %s", track.Artists[0].Name, track.Name))
+	case "request_available_devices":
+		Info_Log("case request_available_devices: calling GetBriefDeviceOptions()")
+		devices, err := GetBriefDeviceOptions(client_spotify)
+		if err != nil || devices == nil {
+			goto GRACEFULLY_HANDLE
+		}
+		//Info_Log(fmt.Sprintf("raw devices from Spotify: %v", devices))
+		Info_Log(fmt.Sprintf("raw devices from Spotify: %s", devices))
+		msg, err = json.Marshal(devices)
+		if err != nil {
+			Errhandle_Log(err, err.Error())
+			goto GRACEFULLY_HANDLE
+		}
+		Info_Log(fmt.Sprintf("Marshalled devices: %s", msg))
+	case "select_device":
+		Info_Log("case select branch: calling GetBriefDeviceOptions()")
+		devices, err := GetBriefDeviceOptions(client_spotify)
+		if err != nil {
+			goto GRACEFULLY_HANDLE
+		}
+		for i, d := range devices {
+			if d == req["data"].(string) {
+				Info_Log(fmt.Sprintf("%d: %s", i, d))
+				playerDevice, err = SelectDevice(client_spotify, i)
+				if err != nil {
+					goto GRACEFULLY_HANDLE
+				}
+				msg, err = json.Marshal(d)
+				if err != nil {
+					Errhandle_Log(err, err.Error())
+					goto GRACEFULLY_HANDLE
+				}
+			}
+		}
+		//  case "8081_dir"
+		//        http.FileServer(http.Dir("./8081_dir")),
+	}
+
+GRACEFULLY_HANDLE:
+	// zzz at least in the file case
+	// zzz need to set a header that indicates the contents is NEW
+	// zzz so a cached value doesn't get used.
+	w.Header().Set("Content-Type", "application/json")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Referrer-Policy", "no-referrer")
+	w.Write(msg)
+}
+
+func UI_ProcessRequest(data []byte) (err error) {
+	{
+		LogEnter()
+		defer LogExit()
+	}
+	var req map[string]interface{}
+
+	Info_Log(fmt.Sprintf("Processed Request from UI: %v", req))
+
+	return
+}

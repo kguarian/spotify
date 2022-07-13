@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/guarian/HOME/coding/go/src/native/spotify_main/spotify'
+go run s -show_active_playlist -include_metadata -update_metadata -verbose_debug -monitor_and_apply_metadata -num_dashboard_rows=7 -num_dashboard_hist=2    -global_fadeout=225
+make: Leaving directory '/home/guarian/HOME/coding/go/src/native/spotify_main/spotify'
+ 
